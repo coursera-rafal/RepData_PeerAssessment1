@@ -73,7 +73,7 @@ ggplot(DailySteps, aes(x = steps)) +
 geom_histogram(color = "darkblue", fill = "lightblue", binwidth = 1000)
 ```
 
-![](PA1_template_files/figure-html/daily steps hist-1.png)<!-- -->
+![](PA1_template_files/figure-html/daily_steps_hist-1.png)<!-- -->
 
 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -106,7 +106,7 @@ ggplot(IntervalSteps, aes(x = interval, y = steps)) +
     geom_line(color = "darkblue", size = 1)
 ```
 
-![](PA1_template_files/figure-html/average interval steps-1.png)<!-- -->
+![](PA1_template_files/figure-html/average_interval_steps-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -160,7 +160,7 @@ ggplot(DailyStepsNoNAs, aes(x = steps)) +
 geom_histogram(color = "darkgreen", fill = "lightgreen", binwidth = 1000)
 ```
 
-![](PA1_template_files/figure-html/daily steps hist - no NAs-1.png)<!-- -->
+![](PA1_template_files/figure-html/daily steps_hist_no_ NAs-1.png)<!-- -->
 
 Mean of the total daily steps: 
 
@@ -189,7 +189,7 @@ median(DailyStepsNoNAs$steps)
 
 # Are there differences in activity patterns between weekdays and weekends?
 
-For this part the \color{red}{\verb|weekdays()|}weekdays() function may be of some help here. Use the dataset with the filled-in missing values for this part.
+For this part the weekdays() function may be of some help here. Use the dataset with the filled-in missing values for this part.
 
 1.Create a new factor variable in the dataset with two levels – “weekday” and “weekend” indicating whether a given date is a weekday or weekend day.
 
@@ -210,4 +210,4 @@ ggplot(IntervalStepsDayfactor, aes(x = interval, y = steps)) +
     facet_grid(day ~ .)
 ```
 
-![](PA1_template_files/figure-html/average interval steps - weekdays vs weekends-1.png)<!-- -->
+![](PA1_template_files/figure-html/average_interval_steps_weekdays_vs_weekends-1.png)<!-- -->
